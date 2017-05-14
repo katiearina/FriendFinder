@@ -61,7 +61,7 @@ var friends = [{
 	clothingBedding: ""
 }];
 
-app.get("/", htmlRoutes.home);
+app.use("/", htmlRoutes.home);
 
 app.get("/survey", htmlRoutes.survey);
 

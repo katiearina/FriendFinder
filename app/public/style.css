@@ -1,3 +1,23 @@
+body {
+	background-color: #FEDD77;
+}
+
+label {
+/*	color: #FEA25D;*/
+	font-weight: bold;
+	margin: 0px 20px 5px 10px;
+}
+
+.jumbotron {
+	background-color: #C49CD0;
+	color: #4E2C66;
+	height: 200px;
+	border-color: #FEA25D;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	z-index: 4;
+}
+
 .container {
 	margin-bottom: 50px;
 }
@@ -5,3 +25,21 @@
 .form-group {
 	margin-top: 25px;
 }
+
+#submit {
+	color: #F0F2DD;
+	background-color: #FEA25D;
+	border-color: #BAD177;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-left: 25%;
+	width: 50%;
+}
+
+#submit:hover {
+	background-color: #F0F2DD;
+	color: #BAD177;
+	border-color: #BAD177;
+	font-weight: bold;
+}
+

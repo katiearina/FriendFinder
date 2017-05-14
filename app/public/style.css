@@ -50,3 +50,12 @@ h1 {
 	font-weight: bold;
 }
 
+a, a:hover, a:active, a:visited {
+	text-decoration: none;
+	color: #4E2C66;
+}
+
+#links {
+	color: #BAD177;
+	font-weight: bold;
+}

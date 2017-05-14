@@ -3,6 +3,9 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
+var htmlRoutes = require('./app/routing/htmlRoutes');
+
+module.exports = app;
 
 // Sets up the Express App
 // =============================================================
@@ -19,7 +22,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // =============================================================
 var friends = [{
 	name: "Katie",
-	photoLink: "URL",
+	photoLink: "https://cloud.githubusercontent.com/assets/22947371/26036648/4c8a3618-38af-11e7-960d-da57b2bdddb2.jpg",
 	spaghettiSyrup: 4,
 	treeJump: 5,
 	drawingFly: 5,
@@ -31,29 +34,45 @@ var friends = [{
 	assassinDollars: 5,
 	clothingBedding: 1
 }, {
-	name: "",
+	name: "Cameron",
 	photoLink: "",
-	spaghettiSyrup: ,
-	treeJump: ,
-	drawingFly: ,
-	birthdayBird: ,
-	jumpsuitFight: ,
-	kneeElbows: ,
-	balloonFood: ,
-	moodTattoo: ,
-	assassinDollars: ,
-	clothingBedding: 
+	spaghettiSyrup: "",
+	treeJump: "",
+	drawingFly: "",
+	birthdayBird: "",
+	jumpsuitFight: "",
+	kneeElbows: "",
+	balloonFood: "",
+	moodTattoo: "",
+	assassinDollars: "",
+	clothingBedding: ""
 }, {
-	name: "",
+	name: "Mary",
 	photoLink: "",
-	spaghettiSyrup: ,
-	treeJump: ,
-	drawingFly: ,
-	birthdayBird: ,
-	jumpsuitFight: ,
-	kneeElbows: ,
-	balloonFood: ,
-	moodTattoo: ,
-	assassinDollars: ,
-	clothingBedding: 
+	spaghettiSyrup: "",
+	treeJump: "",
+	drawingFly: "",
+	birthdayBird: "",
+	jumpsuitFight: "",
+	kneeElbows: "",
+	balloonFood: "",
+	moodTattoo: "",
+	assassinDollars: "",
+	clothingBedding: ""
 }];
+
+app.get("/", htmlRoutes.home);
+
+app.get("/survey", htmlRoutes.survey);
+
+app.get("/style.css", function(req, res) {
+	res.sendFile(path.join(__dirname, "app", "public", "style.css"));
+});
+
+
+
+// Starts the server listening
+// =============================================================
+app.listen(PORT, function() {
+  console.log("App listening on PORT " + PORT);
+});

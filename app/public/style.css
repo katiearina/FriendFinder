@@ -11,27 +11,32 @@ label {
 }
 
 .jumbotron {
+	margin-top: 10px;
 	background-color: #C49CD0;
 	color: #4E2C66;
-	height: 200px;
+/*	height: 200px;*/
 	border-color: #FEA25D;
-	border-bottom-width: 4px;
-	border-bottom-style: solid;
-	z-index: 4;
+	border-width: 5px;
+	border-style: solid;
 }
 
-.container {
+h1 {
+	text-align: center;
+}
+
+#wrap {
 	margin-bottom: 50px;
 }
 
 .form-group {
-	margin-top: 25px;
+	margin-top: 10px;
 }
 
 #submit {
 	color: #F0F2DD;
 	background-color: #FEA25D;
 	border-color: #BAD177;
+	border-width: 2px;
 	font-weight: bold;
 	margin-top: 30px;
 	margin-left: 25%;

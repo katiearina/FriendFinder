@@ -16,16 +16,16 @@ var friends = [{
 }, {
 	name: "Cameron",
 	photoLink: "",
-	spaghettiSyrup: "",
-	treeJump: "",
-	drawingFly: "",
-	birthdayBird: "",
-	jumpsuitFight: "",
-	kneeElbows: "",
-	balloonFood: "",
-	moodTattoo: "",
-	assassinDollars: "",
-	clothingBedding: ""
+	spaghettiSyrup: 2,
+	treeJump: 1,
+	drawingFly: 2,
+	birthdayBird: 2,
+	jumpsuitFight: 4,
+	kneeElbows: 3,
+	balloonFood: 1,
+	moodTattoo: 2,
+	assassinDollars: 5,
+	clothingBedding: 1
 }, {
 	name: "Mary",
 	photoLink: "",

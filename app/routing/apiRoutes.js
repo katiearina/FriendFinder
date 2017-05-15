@@ -1,12 +1,12 @@
-var express = require("express");
-var path = require("path");
-
+var friendData = require("../data/friends");
 // =============================================================
-// Basic routing for HTML pages
-exports.getfriends = function(req, res) {
 
-};
+module.exports = function (app) {
+	app.get("/api/friends", function (req, res) {
+		res.json(friendData);
+	});
 
-exports.postfriends = function(req, res) {
-
+	app.post("/api/friends", function (req, res) {
+		friendData.push(req.body);
+	});
 };

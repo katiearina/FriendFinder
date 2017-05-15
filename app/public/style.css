@@ -32,7 +32,7 @@ h1 {
 	margin-top: 10px;
 }
 
-#submit {
+#submit, #surveybutton {
 	color: #F0F2DD;
 	background-color: #FEA25D;
 	border-color: #BAD177;
@@ -43,7 +43,7 @@ h1 {
 	width: 50%;
 }
 
-#submit:hover {
+#submit:hover, #surveybutton:hover {
 	background-color: #F0F2DD;
 	color: #BAD177;
 	border-color: #BAD177;

@@ -42,10 +42,18 @@ h1, #headertagline {
 	border-color: #BAD177;
 	border-width: 2px;
 	font-weight: bold;
-	margin-top: 50px;
 	margin-left: 25%;
 	width: 50%;
 	overflow: auto;
+}
+
+#submit {
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+#surveybutton {
+	margin-top: 50px;
 }
 
 #submit:hover, #surveybutton:hover {
@@ -53,6 +61,18 @@ h1, #headertagline {
 	color: #BAD177;
 	border-color: #BAD177;
 	font-weight: bold;
+}
+
+.card-footer {
+	background-color: white;
+	color: #BAD177;
+	border-color: #BAD177;
+}
+
+.card {
+	background-color: #F0F2DD;
+	border-color: #BAD177;
+	border-width: 2px;
 }
 
 a, a:link, a:hover, a:active, a:visited {

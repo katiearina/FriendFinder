@@ -20,8 +20,12 @@ label {
 	border-style: solid;
 }
 
-h1 {
+h1, #headertagline {
 	text-align: center;
+}
+
+#headertagline {
+	margin-top: 35px;
 }
 
 #wrap {
@@ -38,9 +42,10 @@ h1 {
 	border-color: #BAD177;
 	border-width: 2px;
 	font-weight: bold;
-	margin-top: 30px;
+	margin-top: 50px;
 	margin-left: 25%;
 	width: 50%;
+	overflow: auto;
 }
 
 #submit:hover, #surveybutton:hover {
@@ -50,12 +55,13 @@ h1 {
 	font-weight: bold;
 }
 
-a, a:hover, a:active, a:visited {
+a, a:link, a:hover, a:active, a:visited {
 	text-decoration: none;
 	color: #4E2C66;
 }
 
 #links {
 	color: #BAD177;
+	text-decoration: none;
 	font-weight: bold;
 }

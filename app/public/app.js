@@ -21,7 +21,7 @@ $("#submit").on("click", function(event) {
 
 $.post("/api/friends", newFriend,
 	function(data) {
-		alert("API!");
+		// alert("API!");
     });
 
 });

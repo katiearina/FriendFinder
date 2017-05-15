@@ -1,24 +1,27 @@
-// Variable Declarations
 // =============================================================
-// Set inputs equal to variables
-var name = $("#name").val();
-var photo = $("#photoLink").val();
-var spaghettiSyrup = $("#spaghettiSyrup").val();
-var treeJump = $("#treeJump").val();
-var drawingFly = $("#drawingFly").val();
-var birthdayBird = $("#birthdayBird").val();
-var jumpsuitFight = $("#jumpsuitFight").val();
-var kneeElbows = $("#kneeElbows").val();
-var balloonFood = $("#balloonFood").val();
-var moodTattoo = $("#moodTattoo").val();
-var assassinDollars = $("#assassinDollars").val();
-var clothesBedding = $("#clothesBedding").val();
+// Variable Declarations
 
 var newFriend; 
 
-// Function Declarations
 // =============================================================
+// Function Declarations
+
 function createNewFriend() {
+
+// Set inputs equal to variables
+var name = $("#name").val();
+var photo = $("#photoLink").val();
+var spaghettiSyrup = parseInt($("#spaghettiSyrup").val());
+var treeJump = parseInt($("#treeJump").val());
+var drawingFly = parseInt($("#drawingFly").val());
+var birthdayBird = parseInt($("#birthdayBird").val());
+var jumpsuitFight = parseInt($("#jumpsuitFight").val());
+var kneeElbows = parseInt($("#kneeElbows").val());
+var balloonFood = parseInt($("#balloonFood").val());
+var moodTattoo = parseInt($("#moodTattoo").val());
+var assassinDollars = parseInt($("#assassinDollars").val());
+var clothesBedding = parseInt($("#clothesBedding").val());
+
 	// Grab the survey elements
 	var newFriend = {
 		"name": name,
@@ -34,21 +37,28 @@ function createNewFriend() {
 
 	$.post("/api/friends", newFriend,
 	function(data) {
-		// alert("API!");
+		// resetSurvey();
 	});
 
 	// displayModal();
-	runFriendQuery();
+	// runFriendQuery();
+	findBestMatch();
 };
 
+function findBestMatch() {
+	var currentURL = window.location.origin;
 
-// function displayModal() {
-// 	$(".modal-body").html(friendData[0].name);
-// };
+	$.ajax({url: currentURL + "/api/friends", method: "GET"})
+		.done(function(friendData){
+	for (var i = 0; i < (friendData.length - 1); i++) {
+		console.log(friendData[i].scores);
+	}
+		console.log(friendData[friendData.length - 1].scores);
+	});
+};
 
-
+// AJAX call to pull and display friendData
 function runFriendQuery() {
-
 	var currentURL = window.location.origin;
 
 	$.ajax({url: currentURL + "/api/friends", method: "GET"})
@@ -66,10 +76,31 @@ function runFriendQuery() {
 
 };
 
+// Reset input fields on submit
+function resetSurvey() {
+	$("#name").val("");
+	$("#photoLink").val("");
+	$("#spaghettiSyrup").val("Select Me!");
+	$("#treeJump").val("Select Me!");
+	$("#drawingFly").val("Select Me!");
+	$("#birthdayBird").val("Select Me!");
+	$("#jumpsuitFight").val("Select Me!");
+	$("#kneeElbows").val("Select Me!");
+	$("#balloonFood").val("Select Me!");
+	$("#moodTattoo").val("Select Me!");
+	$("#assassinDollars").val("Select Me!");
+	$("#clothesBedding").val("Select Me!");
+};
 
-// Function Calls
+
 // =============================================================
+// Function Calls
+
 $("#submit").on("click", function(event) {
 	event.preventDefault();
 	createNewFriend();
+});
+
+$(".close").on("click", function (event) {
+	resetSurvey();
 });

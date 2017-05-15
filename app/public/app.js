@@ -112,6 +112,8 @@ function resetSurvey() {
 	$("#moodTattoo").val("Select Me!");
 	$("#assassinDollars").val("Select Me!");
 	$("#clothesBedding").val("Select Me!");
+
+	$(".modal-body").html("");
 };
 
 

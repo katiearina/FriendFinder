@@ -27,13 +27,13 @@ $("#submit").on("click", function(event) {
 
 	console.log(newFriend);
 
-	friendData.push(newFriend);
+	// friendData.push(newFriend);
 
 	$.post("/api/friends", newFriend,
 		function(data) {
 			// alert("API!");
 		});
 
-	$(".modal-body").html(newFriend[0].name);
+	$(".modal-body").html("Boo!");
 
 });

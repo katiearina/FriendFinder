@@ -24,6 +24,15 @@ h1, #headertagline {
 	text-align: center;
 }
 
+.homeicons {
+	color: #4E2C66;
+	text-shadow:
+		-2px -2px 0 #BAD177,  
+		2px -2px 0 #BAD177,
+		-2px 2px 0 #BAD177,
+		2px 2px 0 #BAD177;
+}
+
 #headertagline {
 	margin-top: 35px;
 }
@@ -56,10 +65,17 @@ h1, #headertagline {
 	margin-top: 50px;
 }
 
-#submit:hover, #surveybutton:hover {
+#surveybutton:hover {
 	background-color: #F0F2DD;
 	color: #BAD177;
 	border-color: #BAD177;
+	font-weight: bold;
+}
+
+#submit:hover {
+	background-color: #4E2C66;
+	color: #C49CD0;
+	border-color: #C49CD0;
 	font-weight: bold;
 }
 

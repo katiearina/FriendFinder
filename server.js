@@ -18,6 +18,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Used to link CSS and JS pages within HTML
 app.use(express.static(path.join(__dirname, "app", "public")));
 
+// Require external route files
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 

@@ -9,6 +9,7 @@
 
   <!-- Bootstrap Link -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
   <!-- CSS Link -->
@@ -339,7 +340,7 @@
   </div>
 <!-- End Question 10 -->
 
-<input class="btn btn-primary" id="submit" type="submit" value="Submit">
+<input class="btn btn-primary" id="submit" type="submit" value="Submit" data-toggle="modal" data-target="#flipFlop">
 
 </form>
 </div>
@@ -348,6 +349,26 @@
 	<a href="/api/friends" target="_blank">API Friends List</a>
 	 | <a href="https://github.com/katiearina/FriendFinder" target="_blank">GitHub Repo</a> <!-- | <a href="./survey">Take Survey!</a>  -->
 </p>
+</div>
+</div>
+</div>
+
+<!-- The modal -->
+<div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+<h4 class="modal-title" id="modalLabel">Flip-flop</h4>
+</div>
+<div class="modal-body">
+A type of open-toed sandal.
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
 </div>
 </div>
 </div>

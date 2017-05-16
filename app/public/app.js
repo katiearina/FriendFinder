@@ -22,6 +22,56 @@ var moodTattoo = parseInt($("#moodTattoo").val());
 var assassinDollars = parseInt($("#assassinDollars").val());
 var clothesBedding = parseInt($("#clothesBedding").val());
 
+if (name === ("")) {
+	alert("Please enter a valid name");
+	// return;
+}
+else if (photo === ("")) {
+	alert("Please enter a valid URL");
+	// return;
+}
+else if (isNaN(spaghettiSyrup)) {
+	alert("Please answer question 1");
+	// return;
+}
+else if (isNaN(treeJump)) {
+	alert("Please answer question 2");
+	// return;
+}
+else if (isNaN(drawingFly)) {
+	alert("Please answer question 3");
+	// return;
+}
+else if (isNaN(birthdayBird)) {
+	alert("Please answer question 4");
+	// return;
+}
+else if (isNaN(jumpsuitFight)) {
+	alert("Please answer question 5");
+	// return;
+}
+else if (isNaN(kneeElbows)) {
+	alert("Please answer question 6");
+	// return;
+}
+else if (isNaN(balloonFood)) {
+	alert("Please answer question 7");
+	// return;
+}
+else if (isNaN(moodTattoo)) {
+	alert("Please answer question 8");
+	// return;
+}
+else if (isNaN(assassinDollars)) {
+	alert("Please answer question 9");
+	// return;
+}
+else if (isNaN(clothesBedding)) {
+	alert("Please answer question 10");
+	// return;
+}
+
+else {
 	// Grab the survey elements
 	var newFriend = {
 		"name": name.trim(),
@@ -43,6 +93,7 @@ var clothesBedding = parseInt($("#clothesBedding").val());
 	// displayModal();
 	// runFriendQuery();
 	findBestMatch();
+}
 };
 
 function findBestMatch() {
@@ -73,8 +124,16 @@ function findBestMatch() {
 		bestMatchFriend = differenceArray.indexOf(smallest);
 		console.log(bestMatchFriend);
 
-	$(".modal-body").html("<h1 class='modalname'>" + friendData[bestMatchFriend].name + "</h1>"
+		$(".modal-body").html("<h1 class='modalname'>" + friendData[bestMatchFriend].name + "</h1>"
 		+ "<img class='modalimage' src='" + friendData[bestMatchFriend].photo + "'>");
+
+	function callModal() {
+	$("#flipFlop").modal({
+		keyboard: false
+	});
+	};
+
+	callModal();
 
 	});
 };
@@ -97,6 +156,12 @@ function findBestMatch() {
 // 		});
 
 // };
+
+function callModal() {
+	$("#flipFlop").modal({
+		keyboard: false
+	});
+};
 
 // Reset input fields on submit
 function resetSurvey() {

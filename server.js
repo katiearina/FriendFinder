@@ -25,5 +25,5 @@ require("./app/routing/htmlRoutes")(app);
 // Starts the server listening
 // =============================================================
 app.listen(PORT, function() {
-  console.log("Magic is happening on PORT " + PORT);
+  console.log("Magic is happening on PORT " + PORT + "!");
 });

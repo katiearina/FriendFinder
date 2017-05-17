@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
 	<title>The Unorthodox Friend Finder!</title>
 
 	<!-- jQuery Link -->
@@ -13,40 +14,52 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 	<!-- CSS Link -->
-	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
 
 	<!-- Font Awesome Link! -->
 	<script src="https://use.fontawesome.com/0a2ce55563.js"></script>
+
+	<!-- Favicon -->
+	<link rel="icon" href="./assets/images/peace-favicon.ico" type="image/gif" sizes="16x16">
 
 </head>
 
 <body>
 
+<!-- Page Container -->
 <div class="container">
 
-<div class="jumbotron">
-  <div class="container">
-    <h1 class="display-3">The Unorthodox Friend Finder</h1>
-    <h1 class="display-3">
-    	<i class="fa fa-hand-spock-o homeicons" aria-hidden="true"></i>
-    	<i class="fa fa-commenting homeicons" aria-hidden="true"></i>
-    	<i class="fa fa-handshake-o homeicons" aria-hidden="true"></i>
-    </h1>
-    <h4 id="headertagline">For when all the ordinary friend-finding apps have failed you.</h4>
-    <a href="/survey"><input class="btn btn-primary" id="surveybutton" type="submit" value="I'm in!"></a>
-  </div>
-</div>
+	<!-- Jumbotron Panel -->
+	<div class="jumbotron">
+		<div class="container">
+			<h1 class="display-3">The Unorthodox Friend Finder</h1>
+			<h1 class="display-3">
+				<i class="fa fa-hand-spock-o homeicons" aria-hidden="true"></i>
+				<i class="fa fa-commenting homeicons" aria-hidden="true"></i>
+				<i class="fa fa-handshake-o homeicons" aria-hidden="true"></i>
+			</h1>
 
-<p id="links">
-	<a href="/api/friends" target="_blank">API Friends List</a>
-	| <a href="https://github.com/katiearina/FriendFinder" target="_blank">GitHub Repo</a> <!-- | <a href="./survey">Take Survey!</a>  -->
-</p>
+			<h4 id="headertagline">For when all the ordinary friend-finding apps have failed you.</h4>
+
+			<!-- Link to Survey Page -->
+			<a href="./survey"><input class="btn btn-primary" id="surveybutton" type="submit" value="I'm in!"></a>
+		</div>
+	</div>
+	<!-- End Jumbotron -->
+
+	<!-- API & GitHub Repo Links -->
+	<p id="links">
+		<a href="/api/friends" target="_blank">API Friends List</a>
+		| <a href="https://github.com/katiearina/FriendFinder" target="_blank">GitHub Repo</a>
+	</p>
+
 </div>
+<!-- End Page Container -->
 
 </body>
 
   <!-- JS Reference -->
-  <script type="text/javascript" src="./app.js">
+  <script type="text/javascript" src="./assets/javascript/app.js">
   </script>
 
 </html>

@@ -2,385 +2,442 @@
 <html>
 
 <head>
-  <title>The Unorthodox Friend Finder!</title>
+    <title>The Unorthodox Friend Finder!</title>
 
-  <!-- jQuery Link -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- jQuery Link -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-  <!-- Bootstrap Link -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-  <!-- CSS Link -->
-  <link rel="stylesheet" href="style.css">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- Font Awesome Link! -->
-  <script src="https://use.fontawesome.com/0a2ce55563.js"></script>
+    <!-- Font Awesome Link! -->
+    <script src="https://use.fontawesome.com/0a2ce55563.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/peace-favicon.ico" type="image/gif" sizes="16x16">
 
 </head>
 
 <body>
 
+<!-- Page Container -->
 <div class="container" id="wrap">
 
-<div class="jumbotron">
-  <div class="container" id="jumbotron-text">
-    <h1 class="display-3"><a href="./">The Unorthodox Friend Finder</a></h1>
-    <h1 class="display-3">
-      <i class="fa fa-hand-spock-o homeicons" aria-hidden="true"></i>
-      <i class="fa fa-commenting homeicons" aria-hidden="true"></i>
-      <i class="fa fa-handshake-o homeicons" aria-hidden="true"></i>
-    </h1>
-    <h4 id="headertagline">For when all the ordinary friend-finding apps have failed you.</h4>
-  </div>
+    <!-- Jumbotron Panel -->
+    <div class="jumbotron">
+        <div class="container" id="jumbotron-text">
+            <h1 class="display-3"><a href="./">The Unorthodox Friend Finder</a></h1>
+            <h1 class="display-3">
+                <i class="fa fa-hand-spock-o homeicons" aria-hidden="true"></i>
+                <i class="fa fa-commenting homeicons" aria-hidden="true"></i>
+                <i class="fa fa-handshake-o homeicons" aria-hidden="true"></i>
+            </h1>
+            
+            <h4 id="headertagline">For when all the ordinary friend-finding apps have failed you.</h4>
+        </div>
+    </div>
+    <!-- End Jumbotron -->
+
+    <!-- Begin Bootstrap Card -->
+    <div class="card">
+
+    <!-- Begin Card Block -->
+    <div class="card-block">
+    <form>
+
+        <!-- Name Field -->
+        <div class="row">
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+            <div class="col-8">
+                <div class="form-group">
+                    <label for="name">Hello, I am:</label>
+                    <input type="text" class="form-control form-control-sm" id="name" placeholder="Your Name">
+                    <small class="form-text text-muted">Who are you, really?</small>
+                </div>
+            </div>
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+        </div>
+        <!-- End Name Field -->
+
+
+        <!-- Photo Link -->
+        <div class="row">
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+            <div class="col-8">
+                <div class="form-group">
+                    <label for="photoLink">Link to a Photo of Yourself</label>
+                    <input type="url" class="form-control form-control-sm" id="photoLink" placeholder="Photo URL">
+                    <small class="form-text text-muted">What do you look like?</small>
+                </div>
+            </div>
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+        </div>
+        <!-- End Photo Link -->
+
+
+        <!-- Question 1 -->
+        <div class="row">
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+            <div class="col-8">
+                <div class="form-group">
+                    <label for="spaghettiSyrup">1) Would you rather have edible spaghetti hair that regrows every night or sweat maple syrup?</label>
+                    <select class="form-control form-control-sm" id="spaghettiSyrup">
+                        <option selected>Select Me!</option>
+                        <option value="1">1 - Edible spaghetti hair all the way</option>
+                        <option value="2">2</option>
+                        <option value="3">3 - I'm ambivalent.</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - I love maple syrup!</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+        </div>
+        <!-- End Question 1 -->
+
+
+        <!-- Question 2 -->
+        <div class="row">
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+            <div class="col-8">
+                <div class="form-group">
+                    <label for="treeJump">2) Would you rather be the best in the world at climbing trees or the best in the world at jumping rope?</label>
+                    <select class="form-control form-control-sm" id="treeJump">
+                        <option selected>Select Me!</option>
+                        <option value="1">1 - Tree, of course. I'm the next Julia "Butterfly" Hill.</option>
+                        <option value="2">2</option>
+                        <option value="3">3 - Decisions are hard.</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Rope jumping!</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+        
+        </div>
+        <!-- End Question 2 -->
+
+
+        <!-- Question 3 -->
+        <div class="row">
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+            <div class="col-8">
+                <div class="form-group">
+                    <label for="drawingFly">3) Would you rather have everything you draw become real but be terrible at drawing or be able to fly but only as fast as you can walk?</label>
+                    <select class="form-control form-control-sm" id="drawingFly">
+                        <option selected>Select Me!</option>
+                        <option value="1">1 - Make these terrifying monsters come to life!</option>
+                        <option value="2">2</option>
+                        <option value="3">3 - I'm undecided.</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Slow flying is the new hip thing anyway.</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+        </div>
+        <!-- End Question 3 -->
+
+
+        <!-- Question 4 -->
+        <div class="row">
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+            <div class="col-8">
+                <div class="form-group">
+                    <label for="birthdayBird">4) Would you rather vomit uncontrollably for one minute every time you hear the song &ldquo;Happy Birthday&rdquo; or get a headache that lasts for the rest of the day every time you see a bird (including in pictures or a video)?</label>
+                    <select class="form-control form-control-sm" id="birthdayBird">
+                        <option selected>Select Me!</option>
+                        <option value="1">1 - Happy Bir-- uuh, I don't feel so great.</option>
+                        <option value="2">2</option>
+                        <option value="3">3 - Unhappy Bird-day to You?</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Tweedly deedly dee! A headache for me!</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+        
+        </div>
+        <!-- End Question 4 -->
+
+
+        <!-- Question 5 -->
+        <div class="row">
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+            <div class="col-8">
+                <div class="form-group">
+                    <label for="jumpsuitFight">5) Would you rather everyone be required to wear identical silver jumpsuits or any time two people meet and are wearing an identical article of clothing they must fight to the death?</label>
+                    <select class="form-control form-control-sm" id="jumpsuitFight">
+                        <option selected>Select Me!</option>
+                        <option value="1">1 - Obviously silver jumpsuits.</option>
+                        <option value="2">2</option>
+                        <option value="3">3 - I'm a jumpsuit-fearing pacifist.</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Fight! Fight! Fight!</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+        </div>
+        <!-- End Question 5 -->
+
+        <!-- Question 6 -->
+        <div class="row">
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+            <div class="col-8">
+                <div class="form-group">
+                    <label for="kneeElbows">6) Would you rather have no knees or no elbows?</label>
+                    <select class="form-control form-control-sm" id="kneeElbows">
+                        <option selected>Select Me!</option>
+                        <option value="1">1 - No knees.</option>
+                        <option value="2">2</option>
+                        <option value="3">3 - Head, something, something, and toes, something and toes!</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - No elbows.</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+        
+        </div>
+        <!-- End Question 6 -->
+
+
+        <!-- Question 7 -->
+        <div class="row">
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+            <div class="col-8">
+                <div class="form-group">
+                    <label for="balloonFood">7) Would you rather there be a perpetual water balloon war going on in your city or a perpetual food fight?</label>
+                    <select class="form-control form-control-sm" id="balloonFood">
+                        <option selected>Select Me!</option>
+                        <option value="1">1 - Water balloons, please!</option>
+                        <option value="2">2</option>
+                        <option value="3">3 - I'm wishy-washy.</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - #foodwars</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+        </div>
+        <!-- End Question 7 -->
+
+
+        <!-- Question 8 -->
+        <div class="row">
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+            <div class="col-8">
+                <div class="form-group">
+                    <label for="moodTattoo">8) Would you rather have skin that changes color based on your emotions or tattoos appear all over your body depicting what you did yesterday?</label>
+                    <select class="form-control form-control-sm" id="moodTattoo">
+                        <option selected>Select Me!</option>
+                        <option value="1">1 - Mood skin sounds appealing.</option>
+                        <option value="2">2</option>
+                        <option value="3">3 - Indecision is a skill of mine.</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Tattoo me up, cap'n! (But do they hurt?)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+        </div>
+        <!-- End Question 8 -->
+
+
+        <!-- Question 9 -->
+        <div class="row">
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+            <div class="col-8">
+                <div class="form-group">
+                    <label for="assassinDollars">9) Would you rather have a boomerang that would find and kill any one person of your choosing, anywhere in the world, but can only be used once or a boomerang that always returns to you with one dollar?</label>
+                    <select class="form-control form-control-sm" id="assassinDollars">
+                        <option selected>Select Me!</option>
+                        <option value="1">1 - Being a boomerang assassin is the life for me.</option>
+                        <option value="2">2</option>
+                        <option value="3">3 - Can't I just have boomerang fish like Lew Zealand? (The Muppet, that is.)</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Make it rain!!</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+        </div>
+        <!-- End Question 9 -->
+
+
+        <!-- Question 10 -->
+        <div class="row">
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+            <div class="col-8">
+                <div class="form-group">
+                    <label for="clothesBedding">10) Would you rather have all of your clothes fit perfectly or have the most comfortable pillow, blankets, and sheets in existence?</label>
+                    <select class="form-control form-control-sm" id="clothesBedding">
+                        <option selected>Select Me!</option>
+                        <option value="1">1 - Perfect clothes, perfect life.</option>
+                        <option value="2">2</option>
+                        <option value="3">3 - I don't want to choose.</option>
+                        <option value="4">4</option>
+                        <option value="5">5 - Zzzzzz..</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Empty Column -->
+            <div class="col-2">
+            </div>
+
+        </div>
+        <!-- End Question 10 -->
+
+
+        <!-- Link to Submit Friend Finder -->
+        <input class="btn btn-primary" id="submit" type="submit" value="Submit">
+
+    </form>
+    </div>
+    <!-- End Card Block -->
+
+    <!-- Begin Card Footer -->
+    <div class="card-footer">
+
+        <!-- API & GitHub Repo Links -->
+        <p id="links">
+            <a href="/api/friends" target="_blank">API Friends List</a>
+            | <a href="https://github.com/katiearina/FriendFinder" target="_blank">GitHub Repo</a> <!-- | <a href="./survey">Take Survey!</a>  -->
+        </p>
+
+    </div>
+    <!-- End Card Footer -->
+
+    </div>
+    <!-- End Bootstrap Card -->
+
 </div>
+<!-- End Page Container -->
 
-<div class="card">
-<div class="card-block">
-<form>
+<!-- Modal -->
+<div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
 
-<!-- Name Field -->
-  <div class="row">
-    <div class="col-2">
-    </div>
+        <div class="modal-header">
+            <h4 class="modal-title" id="modalLabel">Your Friend Match Is:</h4>
+                <button type="button" class="modalClose" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+        </div>
 
-    <div class="col-8">
-
-  <div class="form-group">
-    <label for="name">Hello, I am:</label>
-    <input type="text" class="form-control form-control-sm" id="name" placeholder="Your Name">
-    <small class="form-text text-muted">Who are you, really?</small>
-  </div>
-
-  </div>
-
-    <div class="col-2">
-    </div>
-  </div>
-<!-- End Name Field -->
-
-<!-- Photo Link -->
-  <div class="row">
-    <div class="col-2">
-    </div>
-
-    <div class="col-8">
-
-  <div class="form-group">
-    <label for="photoLink">Link to a Photo of Yourself</label>
-    <input type="url" class="form-control form-control-sm" id="photoLink" placeholder="Photo Link Here">
-    <small class="form-text text-muted">What do you look like?</small>
-  </div>
-
-  </div>
-
-    <div class="col-2">
-    </div>
-  </div>
-<!-- End Photo Link -->
-
-<!-- Question 1 -->
-  <div class="row">
-    <div class="col-2">
-    </div>
-
-    <div class="col-8">
-
-  <div class="form-group">
-    <label for="spaghettiSyrup">1) Would you rather have edible spaghetti hair that regrows every night or sweat maple syrup?</label>
-    <select class="form-control form-control-sm" id="spaghettiSyrup">
-    <option selected>Select Me!</option>
-      <option value="1">1 - (Edible spaghetti hair all the way)</option>
-      <option value="2">2</option>
-      <option value="3">3 - (I'm ambivalent.)</option>
-      <option value="4">4</option>
-      <option value="5">5 - (I love maple syrup!)</option>
-    </select>
-  </div>
-
-  </div>
-
-    <div class="col-2">
-    </div>
-  </div>
-<!-- End Question 1 -->
-
-<!-- Question 2 -->
-  <div class="row">
-    <div class="col-2">
-    </div>
-
-    <div class="col-8">
-
-  <div class="form-group">
-    <label for="treeJump">2) Would you rather be the best in the world at climbing trees or the best in the world at jumping rope?</label>
-    <select class="form-control form-control-sm" id="treeJump">
-    <option selected>Select Me!</option>
-      <option value="1">1 - (Tree, of course. I'm the next Julia "Butterfly" Hill.)</option>
-      <option value="2">2</option>
-      <option value="3">3 - (Decisions are hard.)</option>
-      <option value="4">4</option>
-      <option value="5">5 - (Rope jumping!)</option>
-    </select>
-  </div>
+        <div class="modal-body">
+        <!-- JS Input only -->
+        </div>
 
     </div>
-
-    <div class="col-2">
     </div>
-  </div>
-<!-- End Question 2 -->
-
-<!-- Question 3 -->
-  <div class="row">
-    <div class="col-2">
-    </div>
-
-    <div class="col-8">
-
-  <div class="form-group">
-    <label for="drawingFly">3) Would you rather have everything you draw become real but be terrible at drawing or be able to fly but only as fast as you can walk?</label>
-    <select class="form-control form-control-sm" id="drawingFly">
-    <option selected>Select Me!</option>
-      <option value="1">1 - (Make these terrifying monsters come to life!)</option>
-      <option value="2">2</option>
-      <option value="3">3 - (I'm undecided.)</option>
-      <option value="4">4</option>
-      <option value="5">5 - (Slow flying is the new hip thing anyway)</option>
-    </select>
-  </div>
-
-    </div>
-
-    <div class="col-2">
-    </div>
-  </div>
-<!-- End Question 3 -->
-
-<!-- Question 4 -->
-  <div class="row">
-    <div class="col-2">
-    </div>
-
-    <div class="col-8">
-    
-  <div class="form-group">
-    <label for="birthdayBird">4) Would you rather vomit uncontrollably for one minute every time you hear the song &ldquo;Happy Birthday&rdquo; or get a headache that lasts for the rest of the day every time you see a bird (including in pictures or a video)?</label>
-    <select class="form-control form-control-sm" id="birthdayBird">
-    <option selected>Select Me!</option>
-      <option value="1">1 - (Happy Bir-- uuh, I don't feel so great.)</option>
-      <option value="2">2</option>
-      <option value="3">3 - (Unhappy Bird-day?)</option>
-      <option value="4">4</option>
-      <option value="5">5 - (Tweedly deedly dee!)</option>
-    </select>
-  </div>
-
-    </div>
-
-    <div class="col-2">
-    </div>
-  </div>
-<!-- End Question 4 -->
-
-<!-- Question 5 -->
-  <div class="row">
-    <div class="col-2">
-    </div>
-
-    <div class="col-8">
-    
-  <div class="form-group">
-    <label for="jumpsuitFight">5) Would you rather everyone be required to wear identical silver jumpsuits or any time two people meet and are wearing an identical article of clothing they must fight to the death?</label>
-    <select class="form-control form-control-sm" id="jumpsuitFight">
-    <option selected>Select Me!</option>
-      <option value="1">1 - (Obviously silver jumpsuits.)</option>
-      <option value="2">2</option>
-      <option value="3">3 - (I'm a jumpsuit-fearing pacifist.)</option>
-      <option value="4">4</option>
-      <option value="5">5 - (Fight! Fight! Fight!)</option>
-    </select>
-  </div>
-
-    </div>
-
-    <div class="col-2">
-    </div>
-  </div>
-<!-- End Question 5 -->
-
-<!-- Question 6 -->
-  <div class="row">
-    <div class="col-2">
-    </div>
-
-    <div class="col-8">
-    
-  <div class="form-group">
-    <label for="kneeElbows">6) Would you rather have no knees or no elbows?</label>
-    <select class="form-control form-control-sm" id="kneeElbows">
-    <option selected>Select Me!</option>
-      <option value="1">1 - (No knees)</option>
-      <option value="2">2</option>
-      <option value="3">3 - (Head, something, something, and toes, something and toes!)</option>
-      <option value="4">4</option>
-      <option value="5">5 - (No elbows)</option>
-    </select>
-  </div>
-
-    </div>
-
-    <div class="col-2">
-    </div>
-  </div>
-<!-- End Question 6 -->
-
-<!-- Question 7 -->
-  <div class="row">
-    <div class="col-2">
-    </div>
-
-    <div class="col-8">
-    
-  <div class="form-group">
-    <label for="balloonFood">7) Would you rather there be a perpetual water balloon war going on in your city or a perpetual food fight?</label>
-    <select class="form-control form-control-sm" id="balloonFood">
-    <option selected>Select Me!</option>
-      <option value="1">1 - (Water balloons, please!)</option>
-      <option value="2">2</option>
-      <option value="3">3 - (In the middle of the ride. Everything, everything will be alright.)</option>
-      <option value="4">4</option>
-      <option value="5">5 - (#foodwars)</option>
-    </select>
-  </div>
-
-    </div>
-
-    <div class="col-2">
-    </div>
-  </div>
-<!-- End Question 7 -->
-
-<!-- Question 8 -->
-  <div class="row">
-    <div class="col-2">
-    </div>
-
-    <div class="col-8">
-    
-  <div class="form-group">
-    <label for="moodTattoo">8) Would you rather have skin that changes color based on your emotions or tattoos appear all over your body depicting what you did yesterday?</label>
-    <select class="form-control form-control-sm" id="moodTattoo">
-    <option selected>Select Me!</option>
-      <option value="1">1 - (Mood skin sounds appealing.)</option>
-      <option value="2">2</option>
-      <option value="3">3 - (Indecision is a skill of mine.)</option>
-      <option value="4">4</option>
-      <option value="5">5 - (But do they hurt?)</option>
-    </select>
-  </div>
-
-    </div>
-
-    <div class="col-2">
-    </div>
-  </div>
-<!-- End Question 8 -->
-
-<!-- Question 9 -->
-  <div class="row">
-    <div class="col-2">
-    </div>
-
-    <div class="col-8">
-    
-  <div class="form-group">
-    <label for="assassinDollars">9) Would you rather have a boomerang that would find and kill any one person of your choosing, anywhere in the world, but can only be used once or a boomerang that always returns to you with one dollar?</label>
-    <select class="form-control form-control-sm" id="assassinDollars">
-    <option selected>Select Me!</option>
-      <option value="1">1 - (Being a boomerang assassin is the life for me.)</option>
-      <option value="2">2</option>
-      <option value="3">3 - (Can't I just have boomerang fish like Lew Zealand (the Muppet, that is)?</option>
-      <option value="4">4</option>
-      <option value="5">5 - (Make it rain!)</option>
-    </select>
-  </div>
-
-    </div>
-
-    <div class="col-2">
-    </div>
-  </div>
-<!-- End Question 9 -->
-
-<!-- Question 10 -->
-  <div class="row">
-    <div class="col-2">
-    </div>
-
-    <div class="col-8">
-    
-  <div class="form-group">
-    <label for="clothesBedding">10) Would you rather have all of your clothes fit perfectly or have the most comfortable pillow, blankets, and sheets in existence?</label>
-    <select class="form-control form-control-sm" id="clothesBedding">
-    <option selected>Select Me!</option>
-      <option value="1">1 - (Perfect clothes, perfect life.)</option>
-      <option value="2">2</option>
-      <option value="3">3 - (I don't want to choose.)</option>
-      <option value="4">4</option>
-      <option value="5">5 - (Zzzzzz..)</option>
-    </select>
-  </div>
-
-    </div>
-
-    <div class="col-2">
-    </div>
-  </div>
-<!-- End Question 10 -->
-
-<input class="btn btn-primary" id="submit" type="submit" value="Submit">
-<!-- To toggle modal with submit button use: -->
-<!-- data-toggle="modal" data-target="#flipFlop" -->
-
-</form>
 </div>
-<div class="card-footer">
-<p id="links">
-  <a href="/api/friends" target="_blank">API Friends List</a>
-  | <a href="https://github.com/katiearina/FriendFinder" target="_blank">GitHub Repo</a> <!-- | <a href="./survey">Take Survey!</a>  -->
-</p>
-</div>
-</div>
-</div>
-
-  <!-- The modal -->
-  <div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-  <div class="modal-content">
-  <div class="modal-header">
-  <h4 class="modal-title" id="modalLabel">Your Friend Match Is:</h4>
-  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-  <span aria-hidden="true">&times;</span>
-  </button>
-  </div>
-  <div class="modal-body">
-  <!-- JS Input only -->
-  </div>
-  <!-- <div class="modal-footer">
-  <button type="button" class="btn btn-secondary" data-dismiss="modal">Go Say Hello!</button>
-  </div> -->
-  </div>
-  </div>
-  </div>
+<!-- End Modal -->
 
 <!-- Cite this website for questions: https://conversationstartersworld.com/would-you-rather-questions/ -->
 
 </body>
 
-  <!-- JS Reference -->
-  <script type="text/javascript" src="./app.js">
-  </script>
+    <!-- JS Reference -->
+    <script type="text/javascript" src="./assets/javascript/app.js">
+    </script>
 
 </html>

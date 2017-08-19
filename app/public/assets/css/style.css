@@ -1,10 +1,11 @@
-body {
-	background-color: #FEDD77;
+body, html {
+  background-color: #FEDD77;
+  font-family: 'Saira', sans-serif !important;
 }
 
 label {
-	font-weight: bold;
-	margin: 0px 20px 5px 10px;
+	font-weight: 700;
+	/* margin: 0px 20px 5px 10px; */
 }
 
 .jumbotron {
@@ -18,7 +19,19 @@ label {
 }
 
 h1, #headertagline {
-	text-align: center;
+  text-align: center;
+}
+
+#headertagline {
+  font-family: 'Unica One', cursive !important;
+  font-size: 30px;
+  /* font-family: 'Saira', sans-serif; */
+}
+
+#header {
+  font-family: 'Abril Fatface', cursive !important;
+  font-size: 68px;
+  margin-bottom: 30px;
 }
 
 .homeicons {
@@ -42,12 +55,17 @@ h1, #headertagline {
 	margin-top: 10px;
 }
 
+input, select {
+  font-family: 'Saira', sans-serif;
+}
+
 #submit, #surveybutton {
+  font-family: 'Saira', sans-serif;
 	color: #F0F2DD;
 	background-color: #FEA25D;
 	border-color: #BAD177;
 	border-width: 2px;
-	font-weight: bold;
+	font-weight: 700;
 	margin-left: 25%;
 	width: 50%;
 	overflow: auto;
@@ -66,14 +84,16 @@ h1, #headertagline {
 	background-color: #F0F2DD;
 	color: #BAD177;
 	border-color: #BAD177;
-	font-weight: bold;
+  font-weight: 700;
+  transition-delay: 100ms;
 }
 
 #submit:hover {
 	background-color: #4E2C66;
 	color: #C49CD0;
 	border-color: #C49CD0;
-	font-weight: bold;
+  font-weight: 700;
+  transition-delay: 100ms;
 }
 
 .card-footer {
@@ -88,9 +108,15 @@ h1, #headertagline {
 	border-width: 2px;
 }
 
-a, a:link, a:hover, a:active, a:visited {
+a, a:link, a:active, a:visited {
 	text-decoration: none;
 	color: #4E2C66;
+}
+
+a:hover {
+	text-decoration: none;
+  text-shadow: 1px 1px #e3d0e9;
+  transition-delay: 100ms;
 }
 
 #links {
@@ -98,7 +124,7 @@ a, a:link, a:hover, a:active, a:visited {
 	margin-bottom: 0px;
 	color: #BAD177;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .modalname {

@@ -115,7 +115,13 @@ a, a:link, a:active, a:visited {
 
 a:hover {
 	text-decoration: none;
-  text-shadow: 1px 1px #e3d0e9;
+  text-shadow: 1px 1px #E3D0E9;
+  transition-delay: 100ms;
+}
+
+#header a:hover {
+	text-decoration: none;
+  text-shadow: 1px 1px #BAD177;
   transition-delay: 100ms;
 }
 

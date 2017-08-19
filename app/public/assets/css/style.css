@@ -116,7 +116,7 @@ a, a:link, a:active, a:visited {
 a:hover {
 	text-decoration: none;
   text-shadow: 1px 1px #E3D0E9;
-  transition-delay: 100ms;
+  transition-delay: 50ms;
 }
 
 #header a:hover {
